@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+            <meta charset="utf-8">
+            <title>Inventário</title>
+            <link href="Senai.ico" rel="shortcut icon" type="image/x-icon"/>
+            <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            width: 100%;
+            height: 50px;
+            background-color: #680055;
+            font-family: 'Arial';
+
+        }
+
+            .menu ul {
+                list-style: none;
+                position: relative;
+            }
+
+                .menu ul li {
+                    width: 150px;
+                    float: left;
+                }
+
+            .menu a {
+                padding: 15px;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                background-color: #680055;
+                color: #fff;
+            }
+
+            .menu ul ul {
+                position: absolute;
+                visibility: hidden;
+            }
+
+            .menu ul li:hover ul {
+                visibility: visible;
+            }
+
+            .menu a:hover {
+                background-color: #000;
+            }
+
+            .menu ul ul li {
+                float: none;
+                border-bottom: solid 1px #fff;
+            }
+
+                .menu ul ul li a {
+                    background-color: #680045;
+            }
+
+.logout{
+            width: 100%;
+            height: 50px;
+            background-color: #680055;
+            font-family: Arial;
+
+        }
+
+            .logout ul {
+                list-style: none;
+                position: relative;
+            }
+
+                .logout ul li {
+                    width: 150px;
+                    float: right;
+                }
+
+            .logout a {
+                padding: 15px;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                background-color: #680055;
+                color: #fff;
+            }
+
+            .logout ul ul {
+                position: absolute;
+                visibility: hidden;
+            }
+
+            .logout ul li:hover ul {
+                visibility: visible;
+            }
+
+            .logout a:hover {
+                background-color: #000;
+                color: #;
+            }
+
+            .logout ul ul li {
+                float: none;
+                border-bottom: solid 1px #fff;
+            }
+
+                .logout ul ul li a {
+                    background-color: #680045;
+                }
+
+        label[for="bt_menu"]{
+            padding: 5px;
+            background-color: #680055;
+            color: #fff;
+            font-family: Arial;
+            text-align: left;
+            font-size: 30px;
+            cursor: pointer;
+            height: 50px;
+        }
+
+        #bt_menu {
+            display: none;
+        }
+
+        label[for="bt_menu"]{
+            display: none;
+        }
+
+        @media(max-width: 800px) {
+
+
+            label[for="bt_menu"] {
+                display: block;
+            }
+
+            #bt_menu:checked ~ .menu{
+                margin-left: 0;
+            }
+
+            .menu{
+                margin-top: 5px;
+                margin-left: -100%;
+                transition: all .3s;
+            }
+
+            .menu ul li {
+                width: 100%;
+                float: none;
+            }
+
+            .menu ul ul {
+                position: static;
+                overflow: hidden;
+                max-height: 0;
+                transition: all 1s;
+            }
+
+            .menu ul li:hover ul {
+                height: auto;
+                max-height: 200px;
+            }
+        }
+    </style>
+
+
+    <input type="checkbox" id="bt_menu" />
+    <label for="bt_menu">&#9776;</label>
+
+  
+    <nav class="menu">
+        <ul>            
+    <li><a href="PerfilAdm.html">Home</a></li>
+
+        <li><a href="#">Cadastro</a>
+            <ul>
+                <li><a href="PerfilAdmCadastro.html">Cadastrar patrimônio</a></li>
+		
+                </ul>
+            </li>          
+            
+	<li><a href="#">Estoque</a>
+	<ul>	
+	<li><a href="oioi">Ler patrimônios registrados</a>
+	</ul>
+	
+ <li><a href="#">Usuário</a>
+            <ul>
+               
+	 <li><a href="oioi.cgi">Cadastrar usuário </a></li>
+		<li><a href="mae.cgi">Alterar usuário </a></li>	
+		<li><a href="oi.dgi">Remover usuário </a></li>
+		
+         </ul>
+</ul>
+        
+    <nav class="logout">
+            <ul>
+            <li><a href=''>Logout</a>
+                <ul>
+                    <li><a href="Login.html">Sair</a></li>
+                </ul>
+            </li>
+                </ul>
+            </li>
+        </nav>
+
+    </nav>﻿
+    <section>
+    <p>
+        <center><font size="10" color="#000" face="Arial">Sistema de Gerenciamento - Inventário</font>
+    </center>
+    </p>
+<p> <br> 
+    <font size="14" color="#000" face="Arial"> Instruções </font> 
+</p> </br>
+<p>
+    <h3>
+       <left>
+        <b>Botão HOME:</b> <br>
+      Este botão volta para esta pagina principal, onde tera as instruçoes de uso e outras informaçoes.
+</br>
+</h3>
+</p>
+<p><br>
+    <h3>
+        <b> Botão Cadastro e Buscar: </b> <br> <p>  Intuito de ir para formulário de cadastro e cadastrar novas informações buscar informaçoes salvas
+    </br>
+</p>
+    </h3>
+    </left>
+</section  
